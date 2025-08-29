@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Delius", cursive;
+    font-weight: 800;
+    font-style: normal;
+    color: #000000;
+    overflow-y: hidden;
+}
+
+/* NAVIGATION ELEMENTS */
+.navbar{
+    position: "fixed";
+    top: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    position: relative;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover{
+    color: maroon;
+    transform: translateY(-2px);
+    background: olive;
+}
+
+/* HOME/HERO SECTION */
+.section{
+    height: 100vh;
+    padding: 100px 20px 80px;
+}
+.section#home{
+    opacity: 0.9;
+    transform: translateY(-20px);
+}
+#home{
+    background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: maroon;
+    position: relative;
+    overflow: hidden;
+
+}
+.hero-title{
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+.hero-subtitle{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    animation: slideInFromRight 1s ease-out forwards;
+}
+.hero-button{
+    display: inline-block;
+    padding: 12px 30px;
+    background: olive;
+    color: maroon;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+.hero-button:hover{
+    background: white;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px olive;
+}
